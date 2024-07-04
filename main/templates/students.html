@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block title %}
+{{ title }}
+{% endblock  %}
+
+{% block content %}
+    {% for student in students %}
+        <div class="alert alert-warning mt-2">
+            <h3>{{student.full_name}}</h3>
+            <h3>+{{student.phone_number}}</h3>
+            <h3>{{student.home_address}}</h3>
+            <h3>{{student.created_at}}</h3>
+        
+        </div>
+    {% endfor %}
+{% endblock  %}

@@ -1,0 +1,10 @@
+
+
+TOKEN = '7348492781:AAF1k9SOUewcSdijABp0RryEwnqbG4MdgvM'
+
+
+BAZA = 'db.sqlite3'
+
+
+
+PHONE_NUMBER='+998-90-557-75-11'

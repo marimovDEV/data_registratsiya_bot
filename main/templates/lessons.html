@@ -1,0 +1,35 @@
+{% extends "index.html" %}
+
+{% block title %}
+{{ title }}
+{% endblock  %}
+
+{% block content %}
+    <h1>lessons</h1>
+    
+    {% for lesson in lessons %}
+        <div class="alert alert-warning mt-2">
+            <h3>{{lesson.lesson}}</h3>
+            <h3>{{lesson.about_lesson}}</h3>
+        
+        </div>
+    {% endfor %}
+    <br><br>
+    <h1>now_lessons</h1>
+    {% for now_lesson in now_lessons %}
+        <div class="alert alert-warning mt-2">
+            <h3>{{now_lesson.lesson}}</h3>
+            <h3>{{now_lesson.about_lesson}}</h3>
+        
+        </div>
+    {% endfor %}
+    <br><br>
+    <h1>new_lessons</h1>
+    {% for new_lesson in new_lessons %}
+        <div class="alert alert-warning mt-2">
+            <h3>{{new_lesson.lesson}}</h3>
+            <h3>{{new_lesson.about_lesson}}</h3>
+        
+        </div>
+    {% endfor %}
+{% endblock  %}
